@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body>
+    <script src="src/index.js" defer></script>
+    <div id="nav">
+      <div id="nav1">
+        <button class="button" onclick="whoWon(0)">Better</button>
+      </div>
+      <div id="nav2">
+        <button class="button" onclick="whoWon(1)">Better</button>
+      </div>
+    </div>
+    <div id="image-container">
+      <div id="container1"></div>
+      <div id="container2"></div>
+    </div>
+    <footer>
+      <button class="button" onclick="onDownload()">Save Rankings</button>
+      <button class="button" id="redbutton" onclick="whoWon(-1)">Skip</button>
+      <button class="button" id="infobutton" onclick="showRankings()">
+        Show Rankings
+      </button>
+      <button class="button" id="infobutton" onclick="loadMore()">
+        More Images
+      </button>
+
+      <div class="w3-container">
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+              <ul id="myList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
